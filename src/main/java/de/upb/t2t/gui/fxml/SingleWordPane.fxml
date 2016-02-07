@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <ToolBar fx:id="toolbar" nodeOrientation="RIGHT_TO_LEFT" styleClass="single_word_toolbar" BorderPane.alignment="CENTER" />
+   </bottom>
+   <stylesheets>
+      <URL value="@../css/singleWordStage.css" />
+      <URL value="@../css/common.css" />
+   </stylesheets>
+</BorderPane>

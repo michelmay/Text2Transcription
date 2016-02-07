@@ -1,0 +1,22 @@
+/* The encompassing BorderPane. */
+#settingsPane {
+	-fx-pref-width: 400.0px;
+	-fx-pref-height: 150.0px;
+}
+
+/* The GridPane in which all settings are placed. */
+#settingsGrid {
+	-fx-padding: 10.0px;
+}
+
+/* Any of the labels on the left side. */
+.settingsLabel {
+	
+}
+
+/* Any ComboBox inside the settings pane. */
+.settingsComboBox {
+	-fx-min-width: 150.0px;
+	-fx-pref-width: 200.0px;
+	-fx-max-width: 200.0px;
+}

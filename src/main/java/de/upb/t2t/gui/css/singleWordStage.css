@@ -1,0 +1,6 @@
+/* The toolbar at the bottom of the SingleWordStage giving feedback to the user. */
+.single_word_toolbar {
+	-fx-min-height: 20.0px;
+	-fx-pref-height: 20.0px;
+	-fx-max-height: 20.0px;
+}

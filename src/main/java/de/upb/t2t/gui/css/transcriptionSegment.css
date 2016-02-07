@@ -1,0 +1,61 @@
+/* The outer VBox that contains the entire transcription segment. */
+.transcriptionSegment {
+	-fx-padding: 3.0px;
+}
+
+/* The top HBox containing any information about the lemma. */
+.topHbox {
+	-fx-min-height: 30.0px;
+	-fx-pref-height: 30.0px;
+	-fx-max-height: 30.0px;
+}
+
+/* The labels in the top HBox displaying any leading/trailing items (e.g. punctuation). */
+.topLabel {
+
+}
+
+/* The button in the top HBox displaying the lemma. */
+.lemmaButton {
+
+}
+
+/* The bottom HBox containing the transcription buttons. */
+.buttonBox {
+	-fx-min-height: 30.0px;
+	-fx-pref-height: 30.0px;
+	-fx-max-height: 30.0px;
+}
+
+/* The buttons in the bottom HBox displaying the transcription. */
+.transcriptionButton {
+	-fx-font-family: Courier New;
+	-fx-min-height: 30.0px;
+	-fx-pref-height: 30.0px;
+	-fx-max-height: 30.0px;
+}
+
+.transcriptionButton:focused {
+	-fx-opacity: 0.7;
+}
+
+/* The colouration of the transcription buttons. */
+.functionWord {
+	-fx-background-color: rgb(255.0, 0.0, 0.0, 0.3);
+}
+
+.contentWord {
+	-fx-background-color: rgb(0.0, 0.0, 255.0, 0.3);
+}
+
+/* The buttons in the bottom HBox displaying a delimiter character. */
+.enclosingDelimiter .innerDelimiter {
+	-fx-background-color: transparent;
+}
+
+/* This class is applied to the transcription buttons if their items match multiple word classes. */
+.conflict {
+	-fx-border-color: red;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 3.0px;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="addTranscriptionPane" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="label" styleClass="transcriptionLabel" text="ID: ?" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <tooltip>
+            <Tooltip text="This is the transcription's internal ID. If you see a &quot;?&quot; here then the item currently does not yet have one. This will change as soon as it gets loaded into the database." textAlignment="JUSTIFY" wrapText="true" />
+         </tooltip></Label>
+      <ComboBox fx:id="wordClassBox" onKeyPressed="#onHotkeyPressed" styleClass="transcriptionComboBox" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="4.0">
+         <tooltip>
+            <Tooltip text="Please choose which word class your item belongs to." textAlignment="JUSTIFY" wrapText="true" />
+         </tooltip></ComboBox>
+      <ComboBox fx:id="varietyBox" onKeyPressed="#onHotkeyPressed" styleClass="transcriptionComboBox" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="4.0">
+         <tooltip>
+            <Tooltip text="Please choose which variety your item belongs to." textAlignment="JUSTIFY" wrapText="true" />
+         </tooltip></ComboBox>
+      <ComboBox fx:id="transTypeBox" layoutX="329.0" layoutY="4.0" onKeyPressed="#onHotkeyPressed" prefWidth="150.0" styleClass="transcriptionComboBox" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="4.0">
+         <tooltip>
+            <Tooltip text="Please choose which transcription type your item belongs to. This means that you must indicate whether or not the rules for strong and weak forms apply. In case they don't, simply choose &quot;None&quot;." textAlignment="JUSTIFY" wrapText="true" />
+         </tooltip></ComboBox>
+      <TextField fx:id="transcriptionInput" layoutX="760.0" layoutY="40.0" styleClass="transcriptionInput" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="395.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="4.0" />
+      <Button fx:id="okButton" disable="true" layoutX="734.0" layoutY="44.0" mnemonicParsing="false" onAction="#onOkButtonPressed" onKeyPressed="#onKeyPressedOnButton" text="Ok" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="4.0" />
+      <Button fx:id="deleteButton" disable="true" mnemonicParsing="false" onAction="#deleteItem" onKeyPressed="#onKeyPressedOnButton" text="Delete" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="4.0" />
+      <fx:include fx:id="feedbackIndicator" source="FeedbackIndicator.fxml" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="5.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/editWordDialogue.css" />
+      <URL value="@../css/common.css" />
+   </stylesheets>
+</fx:root>

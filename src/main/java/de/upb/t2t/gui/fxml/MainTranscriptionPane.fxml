@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <SplitPane id="transcriptionPane" dividerPositions="0.35" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane>
+               <center>
+                  <TextArea id="inputField" fx:id="inputField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyPressed="#onInputReceived" wrapText="true">
+                     <tooltip>
+                        <Tooltip text="Please enter the word or sentence you wish transcribed and press ENTER." />
+                     </tooltip>
+				  </TextArea>
+               </center>
+               <right>
+                  <ToolBar id="rideSideToolbar" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" BorderPane.alignment="CENTER">
+                    <items>
+                      <Button alignment="CENTER" mnemonicParsing="false" onAction="#onStartTranscription" styleClass="toolbarButton" text="Transcribe">
+                        <tooltip>
+                          <Tooltip text="Starts the transcription." />
+                        </tooltip>
+					  </Button>
+					  <Button alignment="CENTER" mnemonicParsing="false" onAction="#onCopyTranscription" styleClass="toolbarButton" text="Copy Transcription" textAlignment="CENTER" wrapText="true">
+					    <tooltip>
+                          <Tooltip text="When pressing this button, the currently displayed transcription will be copied to the clipboard. This means that you can paste it outside of the programme if you want to (e.g. by pressing ctfl+v)." />
+                        </tooltip>
+					  </Button>
+                    </items>
+                  </ToolBar>
+               </right>
+            </BorderPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <content>
+                  <FlowPane id="outputField" fx:id="outputField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </center>
+   <top>
+      <MenuBar maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showEditDatabaseDialogue" text="Add/Edit Word" />
+                  <MenuItem mnemonicParsing="false" onAction="#reloadDatabase" text="Load SQL Database" />
+                  <MenuItem mnemonicParsing="false" onAction="#showSettings" text="Settings" />
+              <MenuItem mnemonicParsing="false" onAction="#closeProgramme" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showQuickstart" text="Quickstart" />
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ToolBar id="bottomInfoBar" maxHeight="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+         <items>
+            <HBox>
+               <children>
+                  <ProgressBar id="bottomInfoProgressBar" fx:id="infoBarProgress" nodeOrientation="LEFT_TO_RIGHT" progress="0.0" visible="false" />
+                  <Separator prefWidth="10.0" visible="false" />
+                  <Label id="bottomInfoLabel" fx:id="infoBarLabel" />
+               </children>
+            </HBox>
+         </items></ToolBar>
+   </bottom>
+   <stylesheets>
+      <URL value="@../css/mainTranscriptionPane.css" />
+      <URL value="@../css/common.css" />
+   </stylesheets>
+</fx:root>

@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b10'
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+repositories {
+    jcenter()
+}
+
+mainClassName = 'de.upb.t2t.main.Text2Transcription'
+
+jfxmobile {
+    android {
+        manifest = 'src/android/AndroidManifest.xml'
+    }
+    ios {
+        infoPList = file('src/ios/Default-Info.plist')
+    }
+}
+
+dependencies {
+	compile files('libs/apache-commons-io-2.4/commons-io-2.4.jar', 'libs/SQLite JDBC 3.8.11.2/sqlite-jdbc-3.8.11.2.jar')
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="phoneticSymbolChoiceBox" type="HBox" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button mnemonicParsing="false" onAction="#onAction" onKeyPressed="#onKeyPressed" styleClass="phoneticSymbolButton" text="d" />
+      <Button mnemonicParsing="false" onAction="#onAction" onKeyPressed="#onKeyPressed" styleClass="phoneticSymbolButton" text="dʒ" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/common.css" />
+      <URL value="@../css/phoneticKeyboard.css" />
+   </stylesheets>
+</fx:root>

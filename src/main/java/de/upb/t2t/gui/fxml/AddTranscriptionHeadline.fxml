@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="addTranscriptionHeadline" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Word Class" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="5.0" />
+      <Label text="Variety" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="5.0" />
+      <Label text="Strong / Weak Form?" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="5.0" />
+      <Label text="Transcription" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="5.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/editWordDialogue.css" />
+      <URL value="@../css/common.css" />
+   </stylesheets>
+</AnchorPane>

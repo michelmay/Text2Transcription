@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/android/java"/>
+	<classpathentry kind="src" path="src/android/resources"/>
+	<classpathentry kind="src" path="src/desktop/java"/>
+	<classpathentry kind="src" path="src/desktop/resources"/>
+	<classpathentry kind="src" path="src/ios/java"/>
+	<classpathentry kind="src" path="src/ios/resources"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
+	<classpathentry exported="true" kind="lib" path="libs/apache-commons-io-2.4/commons-io-2.4.jar" sourcepath="libs/apache-commons-io-2.4/commons-io-2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/Text2Transcription/libs/apache-commons-io-2.4/commons-io-2.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/SQLite JDBC 3.8.11.2/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

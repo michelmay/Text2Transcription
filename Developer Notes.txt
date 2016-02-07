@@ -1,0 +1,35 @@
+- The project can be cloned from GitHub via the following address:
+  https://github.com/michelmay/Text2Transcription.git
+  
+- Since some files contain hard-coded phonetic symbols, please make sure
+  to set your IDE's encoding to UTF-8 before opening any of them.
+  In eclipse, got to Preferences -> General -> Content Types and set the
+  'Default Encoding' to 'UTF-8', advisedly for every file type.
+  After having launched T2T for the first time, got to
+  Launch Configurations -> Java Application -> Text2Transcription -> Common 
+  and change the 'Encoding' to UTF-8 as well.
+- After exporting the project to a runnable .jar file, the following folders
+  must be extracted from and located in the same directory with said .jar, 
+  because the app expects them to be in that directory
+  -> config
+  -> images
+  -> de/upb/t2t/gui
+  After that, the class files inside those folders should also be removed 
+  (for cosmetic reasons).
+- The class de.upb.t2t.control.Statics inside the main source folder contains
+  a helper functions. parseBoolean(String) comes in especially handy when 
+  reading property strings from the MainControl instance.
+- For developer convenience, the default properties file's content can be 
+  restored with the help of the DefaultPropertiesSetter. It contains a 
+  hard-coded version of its contents.
+- For debugging purposes, the local SQLite file's tables can be re-created
+  with their initial values (i.e. word classes, varieties, punctChars and
+  currencyChars) but no lemmas or transcription items. The required SQLite 
+  commands are stored as deprecated protected static Strings inside the 
+  AbstractSQLiteBridge. The SQLiteBridgeDesktop contains a createTables plus
+  a series of init methods with the help of which the tables can quickly be 
+  restored.
+- To export the JavaDoc, use the following command line arguments:
+  -encoding "UTF-8" -docencoding "UTF-8" -charset "UTF-8" -Xdoclint:none
+- PreparedStatements need be used to for the (desktop) SQLite queries / 
+  updates, because special characters such as the ' will break the syntax.

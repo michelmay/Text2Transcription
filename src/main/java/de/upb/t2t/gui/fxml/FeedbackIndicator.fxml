@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="feedbackIndicator" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.upb.t2t.control.gui.FeedbackIndicatorController">
+   <stylesheets>
+      <URL value="@../css/feedbackIndicator.css" />
+      <URL value="@../css/common.css" />
+   </stylesheets>
+</Pane>

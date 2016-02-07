@@ -1,0 +1,50 @@
+/* The MenuBar at the top of the main transcription pane. */
+#topMenu {
+
+}
+
+/*
+ * The SplitPane in the centre of the main transcription pane containing
+ * the top and bottom panel.
+ */
+#transcriptionPane {
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Arial";
+}
+
+/* The TextArea into which the user types or copy/pastes their input. */
+#inputField {
+
+}
+
+/* The FlowPane containing the finished transcriptions. */
+#outputField {
+
+}
+
+/* The toolbar to the right of the inputField. */
+#rideSideToolbar {
+	-fx-alignment: center;
+}
+
+/* Any of the buttons inside the toolbar. */
+.toolbarButton {
+	-fx-min-width: 90px;
+	-fx-pref-width: 90px;
+	-fx-max-width: 90px;
+}
+
+/* The ToolBar at the bottom of the main transcription pane. */
+#bottomInfoBar {
+	-fx-pref-height: 30.0px;
+}
+
+/* The informative label inside the bottom tool bar. */
+#bottomInfoLabel {
+
+}
+
+/* The progress bar inside the bottomInfoBar. */
+#bottomInfoProgressBar {
+
+}

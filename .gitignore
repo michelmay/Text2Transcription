@@ -1,0 +1,12 @@
+/.git/
+/.gradle/
+/.idea/
+/.settings/
+/bin/
+/build/
+/gradle/
+/src/main/resources/config/application
+gradlew
+gradlew.bat
+local.properties
+Text2Transcription.iml

@@ -1,0 +1,133 @@
+/* Any of the tooltips displayed in the AddWordDialogue. */
+.tooltip {
+	-fx-min-width: 200.0px;
+	-fx-pref-width: 200.0px;
+	-fx-max-width: 200.0px;
+}
+
+/************
+ * HEADLINE *
+ ************/
+/*
+ * The entire AnchorPane containing area into which the user types the
+ * lemma they wish to edit.
+ */
+#lemmaInputHeadline {
+
+}
+
+/* The label saying "Enter Lemma". */
+#lemmaInputLabel {
+
+}
+
+/* The TextField into which the lemma is typed. */
+#lemmaInputField {
+
+}
+
+/*
+ * The ok button the user presses after entering the lemma they wish to
+ * edit.
+ */
+#lemmaOkButton {
+	/*
+	 * Do not set width properties on this button! They are stored in
+	 * the FXML file, because the progress indicator will otherwise
+	 * resize the node.
+	 */
+}
+
+/* The ProgressIndicator showing the status of the database query. */
+#lemmaProgressIndicator {
+	-fx-max-width: 22.0px;
+	-fx-max-height: 22.0px;
+}
+
+/*
+ * The label underneath the input field giving more precise feedback
+ * about the status of the database query.
+ */
+#lemmaFeedbackLabel {
+	-fx-max-height: 18.0px;
+}
+
+/* The icon next to the lemmaFeedbackLabel for easy visual feedback. */
+#inputValidityIcon {
+	-fx-min-width: 25.0px;
+	-fx-min-height: 25.0px;
+	-fx-pref-width: 25.0px;
+	-fx-pref-height: 25.0px;
+	-fx-max-width: 25.0px;
+	-fx-max-height: 25.0px;
+}
+
+/*
+ * The headline inside the ScrollPane underneath the area into which
+ * the user types the lemma they wish to edit.
+ */
+#addTranscriptionHeadline {
+
+}
+
+/*
+ * The VBox inside the ScrollPane underneath the AddTranscriptionHeadline.
+ * All the AddTranscriptionPanes go into this box.
+ */
+#itemsBox {
+
+}
+
+/**************************
+ * ADD TRANSCRIPTION PANE *
+ **************************/
+/* The encompassing class of the AddTranscriptionPane. */
+.addTranscriptionPane {
+	-fx-pref-width: 630.0px;
+}
+
+/* The label showing the transcription item's ID.  */
+.transcriptionLabel {
+
+}
+
+/* A combo box used to select the word class etc. */
+.transcriptionComboBox {
+	-fx-min-width: 90.0px;
+	-fx-min-height: 25.0px;
+	-fx-pref-width: 90.0px;
+	-fx-pref-height: 25.0px;
+	-fx-max-width: 90.0px;
+	-fx-max-height: 25.0px;
+}
+
+/* The input field into which the transcription is typed. */
+.transcriptionInput {
+	-fx-min-height: 25.0px;
+	-fx-pref-height: 25.0px;
+	-fx-max-height: 25.0px;
+}
+
+/****************
+ * LEMMATA LIST *
+ ****************/
+/*
+ * The list on the right side of the SplitPane showing all lemmata that
+ * have been edited during this session.
+ */
+#lemmataList {
+
+}
+
+/******************
+ * BOTTOM TOOLBAR *
+ ******************/
+/*
+ * The toolbar at the bottom of the BorderPane used to display feedback
+ * to the user.
+ */
+#bottomToolbar {
+	-fx-min-height: 25.0px;
+	-fx-pref-height: 25.0px;
+	-fx-max-height: 25.0px;
+}

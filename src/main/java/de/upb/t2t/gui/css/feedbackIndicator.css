@@ -1,0 +1,12 @@
+/*
+ * The general feedback indicator (as it can be found
+ * in the Add/Edit Word Dialogue, for example).
+ */
+.feedbackIndicator{
+	-fx-min-width: 25.0px;
+	-fx-min-height: 25.0px;
+	-fx-pref-width: 25.0px;
+	-fx-pref-height: 25.0px;
+	-fx-max-width: 25.0px;
+	-fx-max-height: 25.0px;
+}

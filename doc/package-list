@@ -1,0 +1,14 @@
+config
+de.upb.t2t.control
+de.upb.t2t.control.database
+de.upb.t2t.control.database.editing
+de.upb.t2t.control.gui
+de.upb.t2t.control.gui.phonetic_keyboard
+de.upb.t2t.control.gui.settings
+de.upb.t2t.control.gui.transcriber
+de.upb.t2t.control.sqlite
+de.upb.t2t.gui.css
+de.upb.t2t.gui.fxml
+de.upb.t2t.main
+de.upb.t2t.model
+images
